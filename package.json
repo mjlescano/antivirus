@@ -1,0 +1,27 @@
+{
+  "name": "antivirus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "clamscan": "0.8.4",
+    "fast-json-body": "1.1.0",
+    "micro-pico-router": "1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "4.15.0",
+    "eslint-config-mural": "1.0.2",
+    "nodemon": "1.14.11"
+  },
+  "scripts": {
+    "test": "node ./test",
+    "test:watch": "nodemon --exec 'node ./test'",
+    "watch": "nodemon"
+  },
+  "engines": {
+    "node": "6",
+    "npm": "3"
+  },
+  "author": "mjlescano",
+  "license": "MIT"
+}
