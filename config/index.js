@@ -11,4 +11,5 @@ module.exports = Object.assign({
   port: process.env.PORT || 3000,
   clamscanPath: process.env.CLAMSCAN_PATH || '/usr/bin/clamscan',
   clamscanLog: process.env.CLAMSCAN_LOG || null,
+  scanTempFolder: process.env.SCAN_TEMP_FOLDER || 'tmp',
 }, development);

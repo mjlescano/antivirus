@@ -9,13 +9,14 @@
     "micro-pico-router": "1.0.2"
   },
   "devDependencies": {
+    "ava": "0.24.0",
     "eslint": "4.15.0",
     "eslint-config-mural": "1.0.2",
     "nodemon": "1.14.11"
   },
   "scripts": {
-    "test": "node ./test",
-    "test:watch": "nodemon --exec 'node ./test'",
+    "test": "ava test/lib",
+    "test:watch": "nodemon --exec 'npm test'",
     "watch": "nodemon"
   },
   "engines": {
