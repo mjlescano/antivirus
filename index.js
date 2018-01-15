@@ -36,6 +36,10 @@ app.post('/file/scan', (req, res) => {
   });
 });
 
-const server = http.createServer(app).listen(config.port, () => {
-  console.log(` · Server running at port ${config.port} ·`)
-});
+if (module === require.main) {
+  http.createServer(app).listen(config.port, () => {
+    console.log(` · Server running at port ${config.port} ·`)
+  });
+}
+
+module.exports = app;
